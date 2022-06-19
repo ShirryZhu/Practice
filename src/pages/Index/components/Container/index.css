@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vh;
+  height: 80vh;
+}
+
+.container-header {
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+}
+
+.container-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65vh;
+}
+
+.add {
+  border: 3px solid #b68989;
+  border-radius: 28px;
+  width: 40px;
+  height: 40px;
+  line-height: 33px;
+  text-align: center;
+  font-size: 40px;
+  color: #b68989;
+  margin-top: 4vh;
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+}

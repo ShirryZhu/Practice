@@ -1,0 +1,11 @@
+.login-btn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: pink;
+}
