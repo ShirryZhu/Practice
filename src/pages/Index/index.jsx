@@ -30,18 +30,20 @@ const data = [
 export default function Index() {
   const [arr, setArr] = React.useState(data);
 
+  // 接收InputItem组件的内容并在Index组件中保存
   const handleListChange = (list, id) => {
     data[id].list = list;
     setArr(data);
   };
+  // 接收Item组件内容并在Index组件中删除
   const handleDeleteItem = (list, id) => {
-    console.log('index:', list);
     data[id].list = list;
     setArr(data);
   }
   useEffect(() => { }, [arr])
   return (
     <div className='main'>
+      {/* 渲染三个容器 */}
       {
         arr.map((item) => (
           <Container key={item.id} {...item} onListChange={handleListChange} onDeleteItem={handleDeleteItem} />
